@@ -1,7 +1,6 @@
-/* liquid.css */
-.liquid-background {
+/* liquid.css - минимальная версия */
+#infographics {
     position: relative;
-    width: 100%;
     overflow: hidden;
 }
 
@@ -12,27 +11,13 @@
     width: 100%;
     height: 100%;
     z-index: 1;
+    opacity: 0.3;
     pointer-events: none;
 }
 
-.infographics-content {
+#infographics .container,
+#infographics .infographics-grid,
+#infographics .infographic-card {
     position: relative;
     z-index: 2;
 }
-
-/* Убираем старые стили, которые конфликтуют */
-html, body {
-    overflow: auto; /* меняем с hidden на auto */
-    background: transparent; /* убираем черный фон */
-}
-
-/* Убираем эти стили полностью */
-/*
-.content {
-    ... 
-}
-
-.overlay {
-    ...
-}
-*/
