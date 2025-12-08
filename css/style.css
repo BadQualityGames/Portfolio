@@ -453,6 +453,110 @@ body {
     object-fit: cover;
 }
 
+/* ===== СТИЛИ ДЛЯ ССЫЛОК НА СТАТЬИ ===== */
+.article-card {
+    display: flex;
+    align-items: flex-start;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+    gap: 20px;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+}
+
+.article-card:nth-child(2) {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    box-shadow: 0 10px 30px rgba(240, 147, 251, 0.2);
+}
+
+.article-card:nth-child(2):hover {
+    box-shadow: 0 20px 40px rgba(240, 147, 251, 0.3);
+}
+
+.article-icon {
+    flex-shrink: 0;
+    font-size: 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article-content {
+    flex: 1;
+}
+
+.article-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.article-content p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.article-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 25px;
+    background: white;
+    color: #2563EB;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.article-link:hover {
+    background: #f8fafc;
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Адаптивность для карточек статей */
+@media (max-width: 768px) {
+    .article-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 25px;
+    }
+    
+    .article-icon {
+        margin: 0 auto;
+    }
+    
+    .article-link {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .article-card {
+        padding: 20px;
+    }
+    
+    .article-content h3 {
+        font-size: 1.2rem;
+    }
+}
+
 /* ===== СТЕК НЕЙРОСЕТЕЙ ===== */
 .ai-stack {
     display: grid;
