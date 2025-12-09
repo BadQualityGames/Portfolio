@@ -1,4 +1,3 @@
-// liquid.js - плавные волны без пузырьков
 const canvas = document.getElementById('liquidCanvas');
 const ctx = canvas.getContext('2d');
 const container = document.getElementById('infographics');
@@ -140,7 +139,7 @@ function drawLiquid() {
     requestAnimationFrame(drawLiquid);
 }
 
-// События мыши
+// Мышь
 if (container) {
     let mouseTimer;
     
@@ -185,4 +184,5 @@ window.addEventListener('resize', () => {
 setTimeout(() => {
     init();
     drawLiquid();
+
 }, 100);
