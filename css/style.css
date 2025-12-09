@@ -64,6 +64,8 @@ body {
     color: #1D4ED8;
 }
 
+/* ===== NAV ===== */
+
 .nav {
     flex: 1;
     max-width: 800px;
@@ -105,6 +107,8 @@ body {
     color: #2563EB;
     transform: translateY(-1px);
 }
+
+/* ===== CONTACT ===== */
 
 .contact__header {
     display: inline-block;
@@ -241,7 +245,7 @@ body {
     margin: 0;
 }
 
-/* ===== SEO-ТЕКСТЫ ===== */
+/* ===== SEO ===== */
 .seo-grid {
     display: flex;
     flex-direction: column;
@@ -313,7 +317,7 @@ body {
     font-size: 0.9rem;
 }
 
-/* ===== РИЧ-КОНТЕНТ ===== */
+/* ===== РИЧ ===== */
 .rich-content {
     max-width: 1000px;
     margin: 0 auto;
@@ -350,7 +354,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* ===== ГАЛЕРЕЯ ФОТОГРАФИЙ ===== */
+/* ===== ФОТО ===== */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -453,7 +457,7 @@ body {
     object-fit: cover;
 }
 
-/* ===== СТИЛИ ДЛЯ ССЫЛОК НА СТАТЬИ ===== */
+/* ===== СТАТЬИ ===== */
 .article-card {
     display: flex;
     align-items: flex-start;
@@ -529,7 +533,7 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Адаптивность для карточек статей */
+/* ===== МЕДИЯ ДЛЯ АДИПТИВНОСТИ МОБИЛОК ===== */
 @media (max-width: 768px) {
     .article-card {
         flex-direction: column;
@@ -913,4 +917,5 @@ body {
     .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
