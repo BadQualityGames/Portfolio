@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // ===== МОБИЛЬНОЕ МЕНЮ =====
+    // Мобильное меню
     const burgerBtn = document.getElementById('burgerBtn');
     const closeBtn = document.getElementById('closeBtn');
     const mobileMenu = document.getElementById('mobileMenu');
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // ===== СКРЫТИЕ ХЕДЕРА ПРИ ПРОКРУТКЕ =====
+    // Скрытие хадера при прокрутке
     const header = document.getElementById('header');
     let lastScrollTop = 0;
     let scrollTimeout;
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 2000);
     });
     
-    // ===== ПЛАВНАЯ ПРОКРУТКА ДЛЯ ССЫЛОК =====
+    // Прокрутка для ссылок
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // ===== АКТИВНЫЙ ПУНКТ МЕНЮ ПРИ ПРОКРУТКЕ =====
+    // Актив пункт меня при прокрутке
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav__link, .mobile-nav-link');
     
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', highlightNavLink);
     highlightNavLink(); // Инициализация при загрузке
     
-    // ===== ФОРМА КОНТАКТОВ =====
+    // Контакты
     const contactForm = document.getElementById('contactForm');
     
     if (contactForm) {
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // ===== ЛАЙТБОКС ДЛЯ ГАЛЕРЕИ =====
+    // Лайтбоксы
     const galleryItems = document.querySelectorAll('.gallery-item');
     const lightbox = document.createElement('div');
     lightbox.className = 'lightbox';
@@ -301,4 +301,5 @@ document.addEventListener('DOMContentLoaded', function() {
     const styleSheet = document.createElement('style');
     styleSheet.textContent = lightboxStyles;
     document.head.appendChild(styleSheet);
+
 });
