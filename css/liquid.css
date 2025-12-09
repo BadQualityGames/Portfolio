@@ -1,8 +1,6 @@
-/* liquid.css - плавный градиентный переход */
 #infographics {
     position: relative;
     overflow: hidden;
-    /* Убираем фон из CSS, так как рисуем его в canvas */
     background: transparent;
 }
 
@@ -14,7 +12,6 @@
     height: 100%;
     z-index: 1;
     pointer-events: none;
-    /* Убираем mix-blend-mode для чистого градиента */
 }
 
 #infographics .container,
@@ -24,7 +21,7 @@
     z-index: 2;
 }
 
-/* Дополнительный градиент для плавного перехода снизу */
+/* Градиент */
 #infographics::after {
     content: '';
     position: absolute;
@@ -35,4 +32,5 @@
     background: linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.8) 50%, #f8fafc 100%);
     pointer-events: none;
     z-index: 1;
+
 }
